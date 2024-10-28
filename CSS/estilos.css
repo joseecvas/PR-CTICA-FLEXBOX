@@ -1,0 +1,92 @@
+*{
+    color: white;
+}
+body{
+    background: linear-gradient(to right, #ff5e62, #ff9966); 
+}
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: white;
+    padding: 20px;
+}
+header{
+    background-color: #00a5f0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+    gap: 5px;
+}
+div{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 15px 0px;
+    gap: 10px;
+}
+aside{
+    background-color: #00a5f0;
+    flex-grow: 2;
+}
+aside li{
+    color: #005aed
+}
+aside h2{
+    text-align: center;
+}
+main{
+    display: flex; 
+    flex-direction: row;
+    flex-grow: 3;
+    align-items: flex-start;
+}
+.servicio{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 15px 0px;
+}
+#s1{
+    background-color: #e13732;
+    flex-grow: 1;
+}
+#s2{
+    background-color: #8c23aa;
+    flex-grow: 1;
+}
+#s3{
+    background-color: #3c50b4;
+    flex-grow: 1;
+}
+footer{
+    display: flex;
+    background-color: #8c23aa;
+    justify-content: space-around;
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+@media (max-width: 768px) {
+    body {
+      background:none;
+    }
+    header{
+        flex-direction: column;
+    }
+    header h1{
+        text-align: center;
+    }
+    nav{
+        padding: 0;
+        justify-content: space-around;
+    }
+    div{
+        flex-direction: column;
+    }
+}
